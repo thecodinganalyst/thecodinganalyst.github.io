@@ -21,12 +21,12 @@ An easy way to determine is by running the test cases through your code, and kee
 Simply run `ng test --no-watch --code-coverage` if you are using Angular, and the test cases will run automatically and the summary will be displayed in the terminal. Something like this
 
 `
-=============================== Coverage summary ===============================
+====== Coverage summary =========
 Statements   : 97.12% ( 101/104 )
 Branches     : 82.76% ( 24/29 )
 Functions    : 96.77% ( 30/31 )
 Lines        : 96.91% ( 94/97 )
-================================================================================
+=================================
 `
 
 And a folder named `coverage` will be created containing a html report which you can navigate to see which are the lines in which file that didnt meet it's mark. 
