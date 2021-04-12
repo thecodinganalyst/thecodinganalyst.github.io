@@ -9,7 +9,7 @@ tags:
 
 [Angular](https://angular.io/) is a javascript framework for creating websites. Instead of using regular html tags (like div, span, form, input), Angular lets you define new html tags with names so that it is more relatable to your context. These html tags that you define are called Components. 
 
-However, our browsers only understand html tags that defined by (w3c)[https://www.w3.org/TR/2012/WD-html-markup-20121025/elements.html], we can't just create a random html tag like `<word>something</word>`, and expect our browser to interprete it. So actually, the components which we create will all go through the compiler and the result is actually a compilation of html, css and javascripts. So what Angular does, is it sets up the environment for us to create our site with our self-defined tags, define how it looks and behave with css and javascript, and provide ways for us to test and deploy to regular html/css/js, so that it can be interpreted to be displayed correctly and behave accordingly in our regular browsers.
+However, our browsers only understand html tags that defined by [w3c](https://www.w3.org/TR/2012/WD-html-markup-20121025/elements.html), we can't just create a random html tag like `<word>something</word>`, and expect our browser to interprete it. So actually, the components which we create will all go through the compiler and the result is actually a compilation of html, css and javascripts. So what Angular does, is it sets up the environment for us to create our site with our self-defined tags, define how it looks and behave with css and javascript, and provide ways for us to test and deploy to regular html/css/js, so that it can be interpreted to be displayed correctly and behave accordingly in our regular browsers.
 
 <!--more-->
 
@@ -29,11 +29,9 @@ It will begin by asking a few questions:
 
 1. Do you want to enforce stricter type checking and stricter bundle budgets in t
 he workspace? This setting helps improve maintainability and catch bugs ahead of time. For more information, see https://angular.io/strict
-
 > Strict mode ensures that the code adheres to strict syntax checking, by having errors when part of your code is in the grey area, making it easier to maintain but those might not really become error in real life. But when it does, and strict mode is not enabled, the error might not be obvious to find.
 
 2. Would you like to add Angular routing?
-
 > Turn this on if you have multiple pages or screens for users to navigate within this project
 
 3. Which stylesheet format would you like to use? (Use arrow keys)
