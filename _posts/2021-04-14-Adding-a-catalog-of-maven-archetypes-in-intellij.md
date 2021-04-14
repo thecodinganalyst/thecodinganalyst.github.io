@@ -29,7 +29,7 @@ Click the `+` button at the bottom to add the Archetype Catalog URL.
 
 > https://repo.maven.apache.org/maven2/archetype-catalog.xml
 
-**I got this url from the official maven project site - https://maven.apache.org/archetype/maven-archetype-plugin/specification/archetype-catalog.html.**
+*I got this url from the official maven project site - https://maven.apache.org/archetype/maven-archetype-plugin/specification/archetype-catalog.html.*
 
 
 ## Creating a new project with Maven Archetype
