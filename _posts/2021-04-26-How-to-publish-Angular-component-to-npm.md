@@ -8,7 +8,7 @@ tags:
   - NPM
 ---
 
-There are some requirements that a module needs to fullfil before it can be published to npm. For example, you'll need a main field in your package.json (https://docs.npmjs.com/about-packages-and-modules). Plus, Angular is running typescript, which requires some extra steps to compile it to javascript. So it is easier to use (ng-packagr)[https://www.npmjs.com/package/ng-packagr] to help with the process. 
+There are some requirements that a module needs to fullfil before it can be published to npm. For example, you'll need a main field in your package.json (https://docs.npmjs.com/about-packages-and-modules). Plus, Angular is running typescript, which requires some extra steps to compile it to javascript. So it is easier to use [ng-packagr](https://www.npmjs.com/package/ng-packagr) to help with the process. 
 
 This is based on my published ItemsTextBox angular component in npm (https://www.npmjs.com/package/items-text-box), repository available on github - https://github.com/thecodinganalyst/NgItemsTextBox.
 
