@@ -8,9 +8,9 @@ tags:
   - NPM
 ---
 
-There are some requirements that a module needs to fullfil before it can be published to npm. For example, you'll need a main field in your package.json (https://docs.npmjs.com/about-packages-and-modules). Plus, Angular is running typescript, which requires some extra steps to compile it to javascript. So it is easier to use [ng-packagr](https://www.npmjs.com/package/ng-packagr) to help with the process. 
+There are some requirements that a module needs to fullfil before it can be published to npm. For example, you'll need a main field in your package.json [https://docs.npmjs.com/about-packages-and-modules](https://docs.npmjs.com/about-packages-and-modules). Plus, Angular is running typescript, which requires some extra steps to compile it to javascript. So it is easier to use [ng-packagr](https://www.npmjs.com/package/ng-packagr) to help with the process. 
 
-This is based on my published ItemsTextBox angular component in npm (https://www.npmjs.com/package/items-text-box), repository available on github - https://github.com/thecodinganalyst/NgItemsTextBox.
+This is based on my published ItemsTextBox angular component in npm [https://www.npmjs.com/package/items-text-box](https://www.npmjs.com/package/items-text-box), repository available on github - [https://github.com/thecodinganalyst/NgItemsTextBox](https://github.com/thecodinganalyst/NgItemsTextBox).
 
 
 Documenting my steps over here:
@@ -69,7 +69,7 @@ cd dist
 npm pack
 ```
 
-7. Create an account on https://www.npmjs.com/ if you haven't. Login to your npm account from the command line.
+7. Create an account on [https://www.npmjs.com/](https://www.npmjs.com/) if you haven't. Login to your npm account from the command line.
 
 ```
 npm login
