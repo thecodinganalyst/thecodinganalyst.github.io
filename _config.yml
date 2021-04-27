@@ -23,7 +23,13 @@ twitter_username:
 github_username: thecodinganalyst
 minimal_mistakes_skin: dirt
 search: true
-google_analytics: G-NGXYQC5P0C
+
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-NGXYQC5P0C"
+    anonymize_ip: false # default
+
 
 # Build settings
 markdown: kramdown
