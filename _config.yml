@@ -23,6 +23,7 @@ twitter_username:
 github_username: thecodinganalyst
 minimal_mistakes_skin: dirt
 search: true
+google_analytics: G-NGXYQC5P0C
 
 # Build settings
 markdown: kramdown
