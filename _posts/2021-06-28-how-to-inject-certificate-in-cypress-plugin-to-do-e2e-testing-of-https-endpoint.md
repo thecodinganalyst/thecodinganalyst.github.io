@@ -87,5 +87,39 @@ It's using the self-signed certificate by a self-signed CA. You can run the 8 .s
 
 The proxy.js sets up the proxy server in http port 9000, targeting our https 8000 server. So that if we navigate to http://localhost:9000/, it will redirect to https://localhost:8000/, and the certificate is injected, so we can safely open the http://localhost:9000/ in chrome. Run `node start_proxy.js` to start the proxy server. Then try to open `http://localhost:9000` in your chrome browser. It should work.
 
+```
+const http = require('http')
+const httpProxy = require('http-proxy')
+const fs = require('fs')
+
+const proxyServer = httpProxy.createProxyServer({
+    target: {
+        protocol: 'https:',
+        host: 'localhost',
+        port: '8000',
+        cert: fs.readFileSync('cert/client-crt.pem'),
+        key: fs.readFileSync('cert/client-key.pem'),
+        ca: fs.readFileSync('cert/ca-crt.pem')
+    },
+    changeOrigin: true,
+    secure: false
+})
+
+const server = http.createServer((req, res) => {
+    proxyServer.web(req, res)
+})
+
+function start(port){
+    server.listen(port)
+}
+
+function stop(){
+    server.close()
+}
+
+module.exports.start = start
+module.exports.stop = stop
+```
+
 Following good practise, the unit tests are created in the `test` folder, and running `jest` will automatically test the https server and the proxy server to ensure everything is working as it should. 
 
