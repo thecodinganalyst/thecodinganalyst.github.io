@@ -83,7 +83,7 @@ build:
         - npm run export
 ```
 
-I'll also need to edit the test script section of amplify.yml to install `http-server` (https://www.npmjs.com/package/http-server), as described in my previous post - https://thecodinganalyst.github.io/knowledgebase/Simple-http-server-to-test-angular-production-build/. As http-server uses port 8080 by default, the wait-on will need to be changed back to 8080 too.
+I'll also need to edit the test script section of amplify.yml to install [http-server](https://www.npmjs.com/package/http-server), as described in my previous post - [Simple http server to test Angular production build](https://thecodinganalyst.github.io/knowledgebase/Simple-http-server-to-test-angular-production-build/). As http-server uses port 8080 by default, the wait-on will need to be changed back to 8080 too.
 
 ```
 phases:
@@ -111,6 +111,6 @@ And we'll also need to inform cypress to run the tests on port 8080 instead of p
 }
 ```
 
-That's it! The next time AWS Amplify runs, it succeeds. Though I still don't know why the `next start` doesn't run. The full amplify.yml is available on https://github.com/thecodinganalyst/docubot/blob/master/amplify.yml. 
+That's it! The next time AWS Amplify runs, it succeeds. Though I still don't know why the `next start` doesn't run. The full amplify.yml is available on [https://github.com/thecodinganalyst/docubot/blob/master/amplify.yml](https://github.com/thecodinganalyst/docubot/blob/master/amplify.yml). 
 
-Meanwhile, if you are trying to run my sample NextJS application - [Docubut](https://github.com/thecodinganalyst/docubot), do note that you'll need to create and specify a github personal access token (how to: https://github.com/settings/tokens/new?scopes=repo), and the github repo (sans the https://github.com) in the `.env` and `cypress.json`. Or you can just specify the environment variables in the `App Settings > Environment Variables` within the AWS Amplify portal. The names of the environment variable are as specified in the `.env`. 
+Meanwhile, if you are trying to run my sample NextJS application - [Docubut](https://github.com/thecodinganalyst/docubot), do note that you'll need to create and specify a github personal access token (how to: [https://github.com/settings/tokens/new?scopes=repo](https://github.com/settings/tokens/new?scopes=repo), and the github repo (sans the https://github.com) in the `.env` and `cypress.json`. Or you can just specify the environment variables in the `App Settings > Environment Variables` within the AWS Amplify portal. The names of the environment variable are as specified in the `.env`. 
