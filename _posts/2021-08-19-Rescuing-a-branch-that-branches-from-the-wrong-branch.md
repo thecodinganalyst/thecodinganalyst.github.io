@@ -9,19 +9,11 @@ tags:
 
 I am building a fix for the current release of a project, so the `fix` branch should branch out from the current `master` branch like this:
 
- o--------- master
-  \   \ 
-   \   o--- fix
-    \   
-     o----- next      
+![correct branch](/assets/images/2020/08/correct-branch.png)     
 
 However, as I was working on the next release, in the `next` branch at that moment, I created the new branch from where I was working, with `git checkout -b fix`, so it became like this:
 
- o----------- master
-  \
-   o---o----- next
-        \
-         o--- fix
+![error branch](/assets/images/2020/08/error-branch.png)
 
 > I should have used `git checkout -b fix master` instead.
 
