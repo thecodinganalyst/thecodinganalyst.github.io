@@ -22,7 +22,7 @@ plugins {
 
 ```
 
-```Maven
+```xml
 <plugin>
     <groupId>org.jacoco</groupId>
     <artifactId>jacoco-maven-plugin</artifactId>
