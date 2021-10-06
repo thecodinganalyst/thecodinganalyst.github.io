@@ -25,6 +25,11 @@ Then I do a `git stash apply stash@{2}` to apply the changes in my "local dev" s
 FYI:
 
 `git stash pop` will apply the latest stash, aka stash@{0} and delete the stash. 
+
 `git stash drop` will just delete the latest stash, stash@{0}
+
 `git stash drop stash@{1}` will delete the particular stash
+
 `git stash clear` will clear all the stash entries.
+
+
