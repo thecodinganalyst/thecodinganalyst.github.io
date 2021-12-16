@@ -10,7 +10,7 @@ tags:
 
 A little discovery I found recently. My error messages are not showing as intended. 
 
-```
+```java
 @PostMapping
 @ResponseStatus(HttpStatus.CREATED)
 fun createAccount(@RequestBody account: Account): Account {
@@ -28,7 +28,7 @@ fun createAccount(@RequestBody account: Account): Account {
 
 The result is
 
-```
+```json
 {
     "timestamp": "2021-12-16T01:52:23.099+00:00",
     "status": 409,
@@ -47,7 +47,7 @@ So in order to make the error message appear again, the following line is to be 
 
 So after restarting, I will get the error message I wanted.
 
-```
+```json
 {
     "timestamp": "2021-12-16T01:58:27.722+00:00",
     "status": 409,
