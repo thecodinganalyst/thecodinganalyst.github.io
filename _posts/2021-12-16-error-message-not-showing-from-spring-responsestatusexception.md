@@ -10,7 +10,7 @@ tags:
 
 A little discovery I found recently. My error messages are not showing as intended. 
 
-```java
+```kotlin
 @PostMapping
 @ResponseStatus(HttpStatus.CREATED)
 fun createAccount(@RequestBody account: Account): Account {
