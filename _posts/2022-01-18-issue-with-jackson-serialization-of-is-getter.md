@@ -41,3 +41,5 @@ The workaround is to set the MapperFeature - [USE_STD_BEAN_NAMING](https://faste
 ```
 
 Full description with both failure case and workaround is available on [https://github.com/thecodinganalyst/jackson-kotlin-test](https://github.com/thecodinganalyst/jackson-kotlin-test).
+
+https://github.com/FasterXML/jackson-module-kotlin/issues/545
