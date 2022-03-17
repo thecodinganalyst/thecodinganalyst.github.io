@@ -15,4 +15,4 @@ defaults write -g ApplePressAndHoldEnabled -bool true
 
 Run the above command in a terminal, and restart the computer for it to take effect. 
 
-![Accented characters](/assets/2022/03/accented-characters-on-mac-osx.png)
+![Accented characters](/assets/images/2022/03/accented-characters-on-mac-osx.png)
