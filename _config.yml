@@ -87,6 +87,9 @@ footer:
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/dennis-cai-sg/"
 
+head_scripts:
+  - /assets/js/adsense.js
+
 defaults:
   # _posts
   - scope:
