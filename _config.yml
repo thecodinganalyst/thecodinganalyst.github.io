@@ -87,9 +87,6 @@ footer:
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/dennis-cai-sg/"
 
-head_scripts:
-  - https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5807030312548633
-
 defaults:
   # _posts
   - scope:
