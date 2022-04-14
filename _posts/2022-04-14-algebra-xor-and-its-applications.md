@@ -18,7 +18,6 @@ My immediate solution was to iterate through the array and put each number encou
 
 ### 1. XOR operation
 
-```
 |-----|-----|-------|
 |  x  |  y  | x ^ y |
 |-----|-----|-------|
@@ -27,11 +26,9 @@ My immediate solution was to iterate through the array and put each number encou
 |  1  |  0  |   1   |
 |  1  |  1  |   0   |
 |-----|-----|-------|
-```
 
 ### 2. XOR is commutative, `x ^ y = y ^ x`
 
-```
 |-----|-----|-------|-------|
 |  x  |  y  | x ^ y | y ^ x |
 |-----|-----|-------|-------|
@@ -40,11 +37,9 @@ My immediate solution was to iterate through the array and put each number encou
 |  1  |  0  |   1   |   1   |
 |  1  |  1  |   0   |   0   |
 |-----|-----|-------|-------|
-```
 
 and it also implies, `(x ^ y) ^ z = (z ^ y) ^ x = y ^ (x ^ z)`,or basically I can move the brackets around and it won't affect the result
 
-```
 |-------|-----|-----------|-----------|
 | x ^ y |  z  | x ^ y ^ z | z ^ y ^ x |
 |-------|-----|-----------|-----------|
@@ -53,11 +48,9 @@ and it also implies, `(x ^ y) ^ z = (z ^ y) ^ x = y ^ (x ^ z)`,or basically I ca
 |   1   |  0  |     1     |     1     |
 |   1   |  1  |     0     |     0     |
 |-------|-----|-----------|-----------|
-```
 
 ### 3. XOR on the same number gives 0, meaning if I XOR the same number twice (or any even times), it will remove it
 
-```
 |-------|-------|-------|
 |   x   |   y   | x ^ y |
 |-------|-------|-------|
@@ -66,7 +59,6 @@ and it also implies, `(x ^ y) ^ z = (z ^ y) ^ x = y ^ (x ^ z)`,or basically I ca
 |   1   |   0   |   1   |
 | **1** | **1** | **0** |
 |-------|-------|-------|
-```
 
 ### 4. Then I can deduce, `x ^ y ^ z ^ x ^ y = z`.
 
@@ -76,7 +68,7 @@ Because from #3, when I XOR the same number twice, it will be removed. So having
 
 With the above deduction, I can solve for the unique number just by XOR-ing all the numbers in the array, assuming the length of A will never be 0. 
 
-```
+```java
 class Solution {
     public int solution(int[] A) {
         int cache = A[0];
