@@ -94,7 +94,9 @@ Periodically, run `brew cleanup` to remove outdated files. Sometimes, when you i
 
 Sometimes you want to install multiple versions of the same software, take for example [NodeJs](https://nodejs.org/en/). To get the latest version of node, simply run `brew install node`. After installation, a symlink `/usr/local/bin/node` will be created, pointing to the latest node version (e.g. version 17) installed by homebrew, for example `node -> ../Cellar/node/17.6.0_1/bin/node`. So that when you run `node` on your terminal, it will be running the latest version of node. It will be updated to the latest node version when you run `brew upgrade node` or `brew upgrade`. But there might be times when you need to work on a legacy application that is running on node version 12. You can install the version 12 by running `brew install node@12`, and it will be installed into `/usr/local/bin/node@12`. But node@12 is keg-only, meaning a symlink will not be created at `/usr/local/bin/node` to point at it, as this symlink is reserved solely for the latest version of node. So when you run `node --version`, it will still point to the latest version, example version 17. 
 
-To use node12, you have to unlink the existing node by running `brew unlink node`, then run `brew link node@12`. After that when you run `node --version`, you can see that it will be version 12 instead. To bring it back to the latest version, run `brew unlink node@12`, then run `brew link node`. 
+To use node12, you have to unlink the existing node by running `brew unlink node`, then run `brew link --overwrite node@12`. After that when you run `node --version`, you can see that it will be version 12 instead, and `npm -v` will also show you it is version 6.
+
+However, if you try to unlink node@12 and link node, npm is not automatically installed, and the only way to go around it is to reinstall node by running `brew reinstall node`. This is due to how homebrew works and it is intentional. Source: [https://github.com/Homebrew/homebrew-core/issues/34475](https://github.com/Homebrew/homebrew-core/issues/34475).  
 
 ## Other Sources
 
