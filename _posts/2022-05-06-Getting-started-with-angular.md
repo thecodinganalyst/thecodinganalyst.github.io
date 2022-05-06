@@ -11,9 +11,9 @@ tags:
 
 ## What is Angular?
 
-In my opinion, Angular is the platform and framework for building your own customized html tags. While html has a fixed set of tags (e.g. <h1>, <a>, <form>, <input>, etc) you can use to build your website, Angular lets you create your customized tags (e.g. <temperature-converter>, <my-login-form>, etc) with the existing html tags, determine how they should look like and behave. 
+In my opinion, Angular is the platform and framework for building your own customized html tags. While html has a fixed set of tags (e.g. `<h1>`, `<a>`, `<form>`, `<input>`, etc) you can use to build your website, Angular lets you create your customized tags (e.g. `<temperature-converter>`, `<my-login-form>`, etc) with the existing html tags, determine how they should look like and behave. 
 
-But these tags built in Angular are contained within the Angular ecosystem, such that you cannot simply reuse these tags in your normal html pages, but your whole website is made up from all these customized tags you create. There will be a main tag (e.g. <app-root>) in a single html page provided with the Angular framework, and the app-root can contain and link to other customized tags you create, but everything is contained within the <app-root>. And of course, because your browser only recognize html tags, all the customized tags you created will be compiled into normal html. 
+But these tags built in Angular are contained within the Angular ecosystem, such that you cannot simply reuse these tags in your normal html pages, but your whole website is made up from all these customized tags you create. There will be a main tag (e.g. `<app-root>`) in a single html page provided with the Angular framework, and the app-root can contain and link to other customized tags you create, but everything is contained within the `<app-root>`. And of course, because your browser only recognize html tags, all the customized tags you created will be compiled into normal html. 
 **
 Sometimes, you can think of it as creating a website with extra steps. But the benefit of creating the customized tags is so that you can reuse it, instead of creating the html all over again. These "customized tags" are known as **Components** in Angular. Components not just allow you to reuse the appearance, but also the behavior of the tags. Like what should happen when you click this button, or type in the textbox. And with proper knowledge and implementation of the framework, it also makes the code much easier to understand and maintain. However, I would like to stress on the "proper knowledge and implementation", as I have seen many cases of misuse, such that sometimes it might be easier to create normal html. 
 
@@ -47,7 +47,7 @@ You can run it to see how it looks like by running `ng serve`, and you will be p
 
 As you can see, `ng` is the angular command and you have various options to do various things. For a whole list and more information, run `ng help`. 
 
-You can see the `index.html` in the `src` folder, and an unfamiliar <app-root> html tag in it. The <app-root> is created by default for you, and the code for it can be found in the `src/app` folder. 
+You can see the `index.html` in the `src` folder, and an unfamiliar `<app-root>` html tag in it. The `<app-root>` is created by default for you, and the code for it can be found in the `src/app` folder. 
 
 In fact, you probably only need to be concern about the `src/app` folder, the rest are usually not of a main concern in the development process.
 
@@ -61,7 +61,7 @@ These are the files you'll see in the `src/app` folder:
 - app.component.ts
 - app.module.ts
 
-The files prefixed with `app.component` are all for the <app-root> component created by default. The `app.component.spec.ts` is the unit test. The `app.module.ts` is the module file for importing all the other modules, and declaring what is exported from your application. So the module is at the top of the hierarchy and all other components, services are under it. 
+The files prefixed with `app.component` are all for the `<app-root>` component created by default. The `app.component.spec.ts` is the unit test. The `app.module.ts` is the module file for importing all the other modules, and declaring what is exported from your application. So the module is at the top of the hierarchy and all other components, services are under it. 
 
 ## Service
 
@@ -73,7 +73,7 @@ ng generate service temperature-converter
 
 This will create 2 files - temperature-converter.service.ts and temperature-converter.service.spec.ts. The file with the extension `spec.ts` is the unit test. Let's focus on the main service file for now - temperature-converter.service.ts. Notice that Angular automatically added the `service` to your extension so that it is prominent that the file is a service. The generated code will be as such:
 
-```Angular
+```
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -89,7 +89,7 @@ export class TemperatureConverterService {
 
 And we will just add 2 functions to convert celsius to fahrenheit, and vice versa, into this file.
 
-```Angular
+```
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -111,7 +111,7 @@ export class TemperatureConverterService {
 
 As a good practise, we should write some unit tests to confirm that the functions will give the correct results. So, updated the temperature-converter.service.spec.ts to be as such.
 
-```Angular
+```
 import { TestBed } from '@angular/core/testing';
 
 import { TemperatureConverterService } from './temperature-converter.service';
@@ -148,7 +148,7 @@ You can run the unit test with `ng test`.
 
 ![Angular Karma Test](/assets/images/2022/05/angular-karma-test.png)
 
-Now, let's focus on our main component <app-root>. There are 4 files created to serve this component:
+Now, let's focus on our main component `<app-root>`. There are 4 files created to serve this component:
 
 - app.component.css
 - app.component.html
@@ -157,7 +157,7 @@ Now, let's focus on our main component <app-root>. There are 4 files created to 
 
 The `app.component.ts` is where all your variable declaration and functions should reside, the `app.component.html` is the template where you write the html to determine how the component should look like, and the `app.component.css` is the stylesheet for your component. The default `app.component.ts` generated is as such:
 
-```Angular
+```
 import { Component } from '@angular/core';
 
 @Component({
@@ -173,7 +173,7 @@ export class AppComponent {
 The `@Component` is a decorator to group the files together. The `selector` indicates what should be the html tag, which in this case, it's `<app-root>`. The `templateUrl` indicates the html file for this component, and the `styleUrls` indicates the stylesheets. Our class is named `AppComponent`. The `title` is just a property generated by default, and we don't need that, so it can be safely deleted.
 We will convert the code to be as such:
 
-```Angular
+```
 import {Component, Input} from '@angular/core';
 import {TemperatureConverterService} from "./temperature-converter.service";
 
@@ -252,7 +252,7 @@ To style the component, update the `app.component.css` to be as such.
 
 Finally, as always a good practise to have test cases to check your code is working correctly, update the `app.component.spec.ts` to be as such.
 
-```Angular
+```
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
