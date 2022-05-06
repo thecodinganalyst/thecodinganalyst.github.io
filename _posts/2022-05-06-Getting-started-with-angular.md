@@ -39,11 +39,11 @@ ng new temperature-converter
 
 That's it! A whole structure of folders is created for you and it is a running application by itself. 
 
-![Angular folders](/assets/images/05/angular-folders.png)
+![Angular folders](/assets/images/2020/05/angular-folders.png)
 
 You can run it to see how it looks like by running `ng serve`, and you will be prompted to view the application by going to `http://localhost:4200` in your browser. 
 
-![Angular sample](/assets/images/05/angular-sample.png)
+![Angular sample](/assets/images/2020/05/angular-sample.png)
 
 As you can see, `ng` is the angular command and you have various options to do various things. For a whole list and more information, run `ng help`. 
 
