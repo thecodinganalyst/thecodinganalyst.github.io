@@ -109,6 +109,8 @@ export class TemperatureConverterService {
 }
 ```
 
+## Testing
+
 As a good practise, we should write some unit tests to confirm that the functions will give the correct results. So, updated the temperature-converter.service.spec.ts to be as such.
 
 ```
@@ -147,6 +149,8 @@ describe('TemperatureConverterService', () => {
 You can run the unit test with `ng test`.
 
 ![Angular Karma Test](/assets/images/2022/05/angular-karma-test.png)
+
+## Component
 
 Now, let's focus on our main component `<app-root>`. There are 4 files created to serve this component:
 
