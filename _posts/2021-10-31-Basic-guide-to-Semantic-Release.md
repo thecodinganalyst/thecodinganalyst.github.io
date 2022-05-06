@@ -103,7 +103,7 @@ As you can see, not all of the 9 steps are implemented. If it is not implemented
 
 ## Demonstration of semantic release on a Java project with GitHub Actions
 
-To start having semantic release on a java project hosted on GitHub, the first step is to enable GitHub Actions. Click on the `Actions` tab in the github project page, and you will be presented with a variety of templates to choose from. Semantic Release documentation also have a template available on [https://github.com/semantic-release/semantic-release/blob/master/docs/recipes/github-actions.md(https://github.com/semantic-release/semantic-release/blob/master/docs/recipes/github-actions.md), but it is more applicable for a nodejs project, as it is using the default npm plugin which will publish the project to npm. For a java project, a typical workflow will be something as follows:
+To start having semantic release on a java project hosted on GitHub, the first step is to enable GitHub Actions. Click on the `Actions` tab in the github project page, and you will be presented with a variety of templates to choose from. Semantic Release documentation also have a template available on [https://github.com/semantic-release/semantic-release/blob/master/docs/recipes/github-actions.md](https://github.com/semantic-release/semantic-release/blob/master/docs/recipes/github-actions.md), but it is more applicable for a nodejs project, as it is using the default npm plugin which will publish the project to npm. For a java project, a typical workflow will be something as follows:
 
 1. Checkout source code - actions/checkout@v2
 
