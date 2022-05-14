@@ -35,9 +35,7 @@ plugins:
 
 In our example above, I am enabling semantic-release to only run on the `master` branch or `alpha` branch only. And we indicate that `alpha` is a prerelease branch. We also overwrite the default plugins, to remove the `@semantic-release/npm` plugin as we have no intention to publish this to the npm registry. 
 
-Before we start to create our workflow, we need to create a repository secret, named `GH_TOKEN` in our github repository. This is a hard requirement from the default `@semantic-release/github` plugin, so that it can verify that the github repository is accessible, and it can create tags in our repository. So follow this [guide](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) to create your personal access token on github. Then click on the `Settings` tab in your github repository, select `Secrets` > `Actions` from the menu, and click on the `New repository secret` to create a secret named `GH_TOKEN` with the personal access token you just created. 
-
-The above token is just for verifying the access, when the github action runs, it uses an [automatically generated token]((https://docs.github.com/en/actions/security-guides/automatic-token-authentication)) named `GITHUB_TOKEN` to run the actions required. In order for it to do so, we need to allow the automatically generated token to have write permission. So, in the `Settings`, go to `Actions` > `General`, and scroll down to the `Workflow permissions` section, and select the `Read and write permissions` radio button. Don't forget to click the save button.
+When the github action runs, it uses an [automatically generated token]((https://docs.github.com/en/actions/security-guides/automatic-token-authentication)) named `GITHUB_TOKEN` as the access to run the actions required. In order for it to do so, we need to allow the automatically generated token to have write permission. So, in the `Settings`, go to `Actions` > `General`, and scroll down to the `Workflow permissions` section, and select the `Read and write permissions` radio button. Don't forget to click the save button.
 
 ![github action token permission](/assets/images/2022/05/github-action-token-permission.png)
 
@@ -53,7 +51,7 @@ on:
     branches: [ master, alpha ]
 
 env:
-  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  GH_TOKEN: {% raw %}${{ secrets.GITHUB_TOKEN }}{% endraw %}
 
 jobs:
   build:
@@ -66,10 +64,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Use Node.js {% raw %}${{ matrix.node-version }}{% endraw %}
       uses: actions/setup-node@v3
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: {% raw %}${{ matrix.node-version }}{% endraw %}
         cache: 'npm'
     - run: npm ci
     - run: npm run build --if-present
