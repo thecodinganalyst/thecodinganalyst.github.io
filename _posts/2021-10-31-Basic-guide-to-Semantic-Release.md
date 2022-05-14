@@ -129,7 +129,7 @@ on:
     branches: [ master ]
 
 env:
-  GH_TOKEN: ${{ secrets.GH_TOKEN }}
+  GH_TOKEN: {% raw %}${{ secrets.GH_TOKEN }}{% endraw %}
 
 jobs:
   release:
