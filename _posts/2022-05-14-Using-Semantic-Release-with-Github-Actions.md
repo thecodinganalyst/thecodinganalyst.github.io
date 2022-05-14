@@ -89,3 +89,5 @@ To simulate creating a pre-release branch, since we haven't quite started workin
 
 Then when we are ready to create our production version, we create a pull request to merge the alpha branch to our master branch. Semantic release will then run and create `v1.0.0`. 
 
+The sample for the above example is available on [https://github.com/thecodinganalyst/semantic-node](https://github.com/thecodinganalyst/semantic-node).
+
