@@ -1,5 +1,5 @@
 ---
-title: "How to do use environment variable in Angular"
+title: "How to use environment variable in Angular"
 excerpt_separator: "<!--more-->"
 categories:
   - Knowledgebase
