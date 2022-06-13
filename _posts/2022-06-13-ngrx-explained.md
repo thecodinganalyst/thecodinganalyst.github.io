@@ -255,6 +255,6 @@ The data flow of the application can be visually as such.
 
 ![ngrx data flow](/assets/images/2022/06/ngrx-data-flow.png)
 
-The sample application described in this article is available on [https://github.com/thecodinganalyst/bookstore](https://github.com/thecodinganalyst/bookstore).
+The sample application described in this article is available on [https://github.com/thecodinganalyst/bookstore](https://github.com/thecodinganalyst/bookstore). 
 
 
