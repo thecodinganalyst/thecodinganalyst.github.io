@@ -1,5 +1,5 @@
 ---
-title: "How to test HttpClient in Angular"
+title: "Java Arrays Lists & Streams Reference"
 excerpt_separator: "<!--more-->"
 categories:
   - Reference
