@@ -9,6 +9,8 @@ tags:
   - Effects
 ---
 
+![NgRx Testing](/assets/images/2022/06/ngrx-testing.png)
+
 Ngrx is a framework for angular that helps to separate the backend logic from the frontend, making the code easier cleaner. To know more about how it works and how to use it, do check out my previous article - [NgRx explained](https://thecodinganalyst.github.io/knowledgebase/ngrx-explained/). Testing with NgRx is pretty straightforward, you'll just need to use the mocks provided.
 
 Firstly, as the `store` is injected in the constructors, and since unit tests are supposed to be isolated, therefore we'll need to add the `provideMockStore()` into the `providers` array when we configure the testing module. Then we can create a reference to our `store`, declaring as type `MockStore<AppState>`, and get it's value injected from the `TestBed`. 
