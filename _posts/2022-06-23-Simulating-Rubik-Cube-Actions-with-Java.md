@@ -253,6 +253,23 @@ As our goal is to keep things simple and clear, we want to focus all operations 
 This should be the easiest action by just replacing the sides. And we only need to provide 5 of such `face` actions - `face right`, `face back`, `face left`, `face top`, and `face bottom`.
 
 ```
+public void face(FACE newFace){
+    Map<FACE, RubikSide> old = Map.of(
+            FACE.MAIN, getMain().clone(),
+            FACE.RIGHT, getRight().clone(),
+            FACE.BACK, getBack().clone(),
+            FACE.LEFT, getLeft().clone(),
+            FACE.TOP, getTop().clone(),
+            FACE.BOTTOM, getBottom().clone()
+    );
+    main = getFace(newFace);
+    right = old.get(getRightFaceOf(newFace));
+    back = old.get(getBackFaceOf(newFace));
+    left = old.get(getLeftFaceOf(newFace));
+    top = old.get(getTopFaceOf(newFace));
+    bottom = old.get(getBottomFaceOf(newFace));
+}
+
 public static FACE getBackFaceOf(FACE face){
     if(face == FACE.MAIN) return FACE.BACK;
     if(face == FACE.RIGHT) return FACE.LEFT;
