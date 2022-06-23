@@ -324,7 +324,7 @@ public interface RubikCubeAction {
 
 We provide 3 functions here: `getName`, `performAction`, and `oppositeAction`. The `getName` is supposed to print the name of the action so that we can visualize what happen. The `performAction` utilises a [strategy pattern](https://refactoring.guru/design-patterns/strategy) to call the different actions with the same method without a long list of if-else or switch statements. Lastly, in order to make sure our actions are updating the values correctly, we want to run a whole list of actions, then run the reverse list of each action's opposite action, and it should give us back the perfect rubik's cube. So we need each action to have an opposite action. 
 
-![rubik cube reverse action list](/assets/2022/06/rubic-cube-reverse-actions.png)
+![rubik cube reverse action list](/assets/images/2022/06/rubic-cube-reverse-actions.png)
 
 And so we have a `FaceAction` and a `TurnAction` that implements the `RubikCubeAction`. And each of these 2 actions can help to provide all the possible actions for the cube.
 
