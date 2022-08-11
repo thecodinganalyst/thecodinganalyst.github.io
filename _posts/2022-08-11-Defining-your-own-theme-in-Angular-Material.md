@@ -96,7 +96,7 @@ Then I will generate the themes until I get a red color and lock it, because I'l
 
 To generate the different shades of the colors, we can use the color palette tool from the material design website - [https://material.io/design/color/the-color-system.html#tools-for-picking-colors](https://material.io/design/color/the-color-system.html#tools-for-picking-colors). 
 
-![tools for picking color](/assets/images/08/tools-for-picking-color.png)
+![tools for picking color](/assets/images/2022/08/tools-for-picking-color.png)
 
 Enter the color codes on the right, and the shades 50 - 900 will be generated for you. You can leave out the A100 - A700 as they are optional. Then create the palette SCSS map variable in your `styles.css` as follows.
 
