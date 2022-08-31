@@ -54,6 +54,7 @@ The above code can also be found on the official NgRx router store page - [https
 
 Then you can just subscribe to the selector you need in your component and display it. For example, if you just want to get the title.
 
+```
 <b>Title: </b><div *ngIf="title">{{title}}</div>export class ChildComponent implements OnInit {
 
   title?: string;
