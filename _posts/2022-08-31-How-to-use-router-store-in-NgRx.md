@@ -54,11 +54,7 @@ export const {
 
 The above code can also be found on the official NgRx router store page - [https://ngrx.io/guide/router-store/selectors](https://ngrx.io/guide/router-store/selectors). This provides all the selectors available in the router store to get whichever navigation data you need. 
 
-Then you can just subscribe to the selector you need in your component and display it. For example, if you just want to get the title.
-
-```
-<b>Title: </b><div *ngIf="title">{{title}}</div>
-```
+Then you can just subscribe to the selector you need in your component and display it. For example, if you just want to get the title from the router-store, you can subscribe to the `selectTitle` selector from the `store`, and assign it to a local variable (also named `title` in our case) upon data received.
 
 ```
 export class ChildComponent implements OnInit {
