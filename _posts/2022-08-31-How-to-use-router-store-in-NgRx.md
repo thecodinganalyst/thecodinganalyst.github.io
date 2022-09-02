@@ -9,6 +9,8 @@ tags:
   - Router-Store
 ---
 
+![NgRx router store](/assets/images/2022/08/router-store.png)
+
 ## What is the purpose of the router-store in NgRx?
 
 As explained in my [previous article on NgRx](https://thecodinganalyst.github.io/knowledgebase/ngrx-explained/), the purpose of NgRx is to separate the data management part of our frontend 
