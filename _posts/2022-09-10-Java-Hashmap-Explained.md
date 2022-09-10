@@ -27,7 +27,7 @@ We can achieve that by turning the key into an integer. How? [hashCode()](https:
 
 1. The hashcode function must return the same value for the same unmodified object in an application. Though the same object do not need to return the same value when run in a different application.
 
-2. If 2 objects return true with the `[equals()](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object))` function, they must have the same hashCode value.
+2. If 2 objects return true with the [`equals()`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)) function, they must have the same hashCode value.
 
 3. Different objects can return the same hashcode even if they are not equal.
 
@@ -53,7 +53,7 @@ To further illustrate the point, suppose a hashmap with the following key value 
 
 The result hashmap in the array and linked list combination will be as such. 
 
-![hashmap sample](/assets/images/2022/09/hashmap_Sample.png)
+![hashmap sample](/assets/images/2022/09/hashmap_sample.png)
 
 The code to generate the keys are available on my [github gist](https://gist.github.com/thecodinganalyst/caa2830f4d6a96f08afb84f85b0d3df2)
 
