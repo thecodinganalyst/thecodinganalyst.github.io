@@ -61,4 +61,4 @@ subscription = this.observable$.subscribe({
 
 Just like what the observable is emitting, the receiving end, also known as the [observer](https://rxjs.dev/guide/observer), has 3 properties - `next`, `error`, and `complete`, which are functions to handle the data received from the observable. 
 
-A sample of a working code is available on [Stackblitz](https://stackblitz.com/edit/angular-ivy-lsmx6f?file=src/app/app.component.ts).
+A sample of a working code is available on [Stackblitz](https://stackblitz.com/edit/thecodinganalyst-observable-explained).
