@@ -55,4 +55,4 @@ div {
 }
 ```
 
-A working example is available on my [Stackblitz](https://stackblitz.com/edit/angular-ivy-a5fjxc).
+A working example is available on my [Stackblitz](https://stackblitz.com/edit/thecodinganalyst-pass-data-from-angular-to-css).
