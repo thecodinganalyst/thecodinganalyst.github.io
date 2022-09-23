@@ -23,7 +23,7 @@ Like in the example above, the building and the unit field will take up less scr
 <div style="--size:50%">hello</div>
 ```
 
-Since this is in the html, I can use angular data binding to set the value - `--size:&#123;&#123;rect&#125;&#125;`. 
+Since this is in the html, I can use angular data binding to set the value - `{% raw %}--size:{{rect}}{% endraw %}`. 
 
 Below is an example where I have an array of percentage width defined in the property named `rects`.
 
@@ -37,8 +37,8 @@ export class AppComponent {
 Then in my html template, I define the css variable named `size`, with the values from the iteration of my `rects` property.
 
 ```
-<div *ngFor="let rect of rects" style="--size:&#123;&#123; rect &#125;&#125;">
-  &#123;&#123; rect &#125;&#125;
+<div *ngFor="let rect of rects" style="--size:{% raw %}{{ rect }}{% endraw %}">
+  {% raw %}{{ rect }}{% endraw %}
 </div>
 ```
 
