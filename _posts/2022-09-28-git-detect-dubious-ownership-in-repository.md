@@ -10,6 +10,8 @@ tags:
   - Security
 ---
 
+![one does not simply trust folders not owned by self](/assets/images/2022/09/one-does-not-simply.jpg)
+
 When working in the corporate environment, we usually have a designated user space for each authenticated user on our computer. For example, in Windows, if our username is `abc`, we have a folder in `C:\Users`, named `C:\Users\abc` for all of user `abc`'s files. And if we put our git repository in this folder, you might get the following error message when you perform any git operations, like `git status`.
 
 ```
