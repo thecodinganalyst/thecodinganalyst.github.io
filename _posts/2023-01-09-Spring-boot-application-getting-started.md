@@ -14,7 +14,7 @@ Frameworks have made developing backend applications much easier compared to doi
 
 In our forum application, users can create topics to discuss, and within each topic, users can write posts to discuss within the users. A very simplified class diagram to demonstrate the relationships is as below.
 
-![forum class diagram](/assts/images/2023/01/forum-class-diagram.png)
+![forum class diagram](/assets/images/2023/01/forum-class-diagram.png)
 
 However, in the scope of showing how to use Spring, we shall just focus only on the Topic and Post for now.
 
