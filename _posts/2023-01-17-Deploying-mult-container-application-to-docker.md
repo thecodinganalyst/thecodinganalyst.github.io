@@ -5,9 +5,9 @@ categories:
   - Tutorial
 tags:
   - Docker
+  - Docker Compose
+  - Multi Stage Build
   - MariaDB
-  - Gradle
-  - Spring Boot
 ---
 
 In my last post - [Getting started Spring Boot Application](https://thecodinganalyst.github.io/tutorial/Spring-boot-application-getting-started/), I demonstrated how to create a sample forum application with Spring Boot using MariaDB as the database. In this article, I shall demonstrate how to deploy that application to docker.
