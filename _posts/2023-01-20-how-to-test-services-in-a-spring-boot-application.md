@@ -6,6 +6,7 @@ categories:
 tags:
   - Spring Boot
   - Spring Testing
+  - Mockito
 ---
 
 Unit testing services is easy, cause we don't need to set up any application context in Spring, since the purpose of unit testing is just to isolate testing of the code that is written in the function we want to test. We shouldn't be testing any other code that are in other classes or functions. 
