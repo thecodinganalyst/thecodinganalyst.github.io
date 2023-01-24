@@ -2,7 +2,7 @@
 title: "How to test Spring Data repository"
 excerpt_separator: "<!--more-->"
 categories:
-  - Knowledgebase
+  - Tutorial
 tags:
   - Spring Data
   - Spring Testing

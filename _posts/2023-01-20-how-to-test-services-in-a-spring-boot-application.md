@@ -2,7 +2,7 @@
 title: "How to test services in a Spring boot application"
 excerpt_separator: "<!--more-->"
 categories:
-  - Knowledgebase
+  - Tutorial
 tags:
   - Spring Boot
   - Spring Testing
