@@ -72,3 +72,5 @@ public void whenPostTopic_thenReturnStatusCreatedAndTopic() throws Exception {
             .andExpect(jsonPath("$.updated").isNotEmpty());
 }
 ```
+
+The above working example is available on my [github repo](https://github.com/thecodinganalyst/forum/blob/master/src/test/java/com/hevlar/forum/controller/PostControllerIntegrationTest.java). Do refer to my post on [Getting Started Spring boot application](https://thecodinganalyst.github.io/tutorial/Spring-boot-application-getting-started/) for the context of the project. 
