@@ -2,7 +2,7 @@
 title: "How to do integration testing in Spring Boot Rest application"
 excerpt_separator: "<!--more-->"
 categories:
-  - Knowledgebase
+  - Tutorial
 tags:
   - Spring Boot
   - Spring Testing
