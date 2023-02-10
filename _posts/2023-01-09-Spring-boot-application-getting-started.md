@@ -393,7 +393,7 @@ jakarta.validation.NoProviderFoundException: Unable to create a Configuration, b
 > To resolve it, add `implementation 'org.springframework.boot:spring-boot-starter-validation:3.0.1'` to your gradle dependency. [Source](https://www.baeldung.com/spring-boot-bean-validation).
 
 
-The source code for the above application is available on my [github](https://github.com/thecodinganalyst/forum).
+The source code for the above application is available on my github tagged as the [initial-sample](https://github.com/thecodinganalyst/forum/tree/initial-sample) release, as the code will be updated subsequently as I introduced new articles on how to improve the solution.
 
 This is part of a series illustrating how to build a backend Spring boot application.
 - [Getting Started Spring Boot Application](https://thecodinganalyst.github.io/tutorial/Spring-boot-application-getting-started/)
@@ -402,3 +402,5 @@ This is part of a series illustrating how to build a backend Spring boot applica
 - [Testing Services](https://thecodinganalyst.github.io/tutorial/how-to-test-services-in-a-spring-boot-application/)
 - [Unit Testing of Controller](https://thecodinganalyst.github.io/tutorial/how-to-unit-test-rest-controller-in-a-spring-boot-application/)
 - [Integration Testing](https://thecodinganalyst.github.io/knowledgebase/how-to-do-integration-testing-in-spring-boot-rest-application/)
+- [Code quality review with Sonarqube](https://www.thecodinganalyst.com/tutorial/integrate-code-quality-review-with-sonarqube/)
+- [Configure Spring Security CSRF for testing on Swagger](https://www.thecodinganalyst.com/tutorial/Configure-spring-security-csrf-for-testing-on-swagger/)
