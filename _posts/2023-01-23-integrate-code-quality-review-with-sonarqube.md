@@ -85,7 +85,7 @@ sonar.login=GET_YOUR_OWN_TOKEN_DURING_SONARQUBE_PROJECT_SETUP
 
 Now all is set, you should be able to see the new `jacocoTestReport` and `sonarqube` tasks under the `verification` group in your IDE's gradle plugin. Go ahead and run it, then open your sonarqube to view the code review results and improve your code.
 
-A full example of this setup is available on my github repository in the [forum project](https://github.com/thecodinganalyst/forum).
+A full example of this setup is available on my github repository in the [initial-gradle tag of the forum project](https://github.com/thecodinganalyst/forum/tree/gradle-sonarqube).
 
 This is part of a series illustrating how to build a backend Spring boot application.
 - [Getting Started Spring Boot Application](https://thecodinganalyst.github.io/tutorial/Spring-boot-application-getting-started/)
