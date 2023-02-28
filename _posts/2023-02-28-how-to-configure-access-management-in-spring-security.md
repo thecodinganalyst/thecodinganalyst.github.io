@@ -313,3 +313,5 @@ public class AuthenticationTest {
 
 }
 ```
+
+Finally, a working copy of the above implementations can be found at [https://github.com/thecodinganalyst/forum/tree/spring-security-login](https://github.com/thecodinganalyst/forum/tree/spring-security-login).
