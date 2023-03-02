@@ -65,6 +65,6 @@ module.exports = {
 
 Then install `raw-loader` and `remark-loader` with `npm install raw-loader remark-loader --save-dev`. Run `npm run dev` again.
 
-![Material template working](/assets/2023/03/material-template-working.png)
+![Material template working](/assets/images/2023/03/material-template-working.png)
 
 A working sample of the above is available on [https://github.com/thecodinganalyst/material-next-blog-ts](https://github.com/thecodinganalyst/material-next-blog-ts).
