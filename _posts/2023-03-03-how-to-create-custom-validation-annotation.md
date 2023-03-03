@@ -79,3 +79,16 @@ public class CustomPasswordValidator implements ConstraintValidator<ValidPasswor
 
 This class needs to implement `ConstraintValidator` interface, with 2 generic paramters. The first one is the annotation class that will use this, and the second one is the type of input it will be validating. The `isValid` function is the one which we can customize to return a boolean value indicating if the validation will pass. Here we are using regular expression to validate the string. 
 
+A full working example of the above code sample is available on my github repository - [https://github.com/thecodinganalyst/forum](https://github.com/thecodinganalyst/forum)
+
+This is part of a series illustrating how to build a backend Spring boot application.
+- [Getting Started Spring Boot Application](https://thecodinganalyst.github.io/tutorial/Spring-boot-application-getting-started/)
+- [Deploying to Docker](https://thecodinganalyst.github.io/tutorial/Deploying-mult-container-application-to-docker/)
+- [Spring Data Testing](https://thecodinganalyst.github.io/tutorial/how-to-test-spring-data-repository/)
+- [Testing Services](https://thecodinganalyst.github.io/tutorial/how-to-test-services-in-a-spring-boot-application/)
+- [Unit Testing of Controller](https://thecodinganalyst.github.io/tutorial/how-to-unit-test-rest-controller-in-a-spring-boot-application/)
+- [Integration Testing](https://thecodinganalyst.github.io/knowledgebase/how-to-do-integration-testing-in-spring-boot-rest-application/)
+- [Code quality review with Sonarqube](https://www.thecodinganalyst.com/tutorial/integrate-code-quality-review-with-sonarqube/)
+- [Configure Spring Security CSRF for testing on Swagger](https://www.thecodinganalyst.com/tutorial/Configure-spring-security-csrf-for-testing-on-swagger/)
+- [Configure Access Management in Spring Security](https://www.thecodinganalyst.com/tutorial/how-to-configure-access-management-in-spring-security/)
+- [Validate inputs in Spring Boot RestController](https://www.thecodinganalyst.com/tutorial/how-to-validate-input-in-spring-boot-restcontroller/)
