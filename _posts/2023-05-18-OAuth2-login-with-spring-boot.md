@@ -1,11 +1,12 @@
 ---
-title: "OIDC login with Spring Boot"
+title: "OpenID Connect login with Spring Boot"
 excerpt_separator: "<!--more-->"
 categories:
   - Tutorial
 tags:
   - Spring
   - OAuth2
+  - OpenID Connect
   - Spring Security
 ---
 
