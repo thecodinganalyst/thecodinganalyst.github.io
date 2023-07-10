@@ -46,13 +46,19 @@ export default TaskList;
 
 To have states in react, we need to use the [`useState` hook](https://react.dev/reference/react/useState) to define the state. 
 
-1. The `const [tasks, setTasks] = useState(initialTask)` sets the state variable to be named `tasks`, and we can use the function `setTasks` to update the state. The initial value of `tasks` is set to `initialTask`. > `useState` is a hook, and hooks are only allowed to be called at the top level of your component.
+### 1 The `const [tasks, setTasks] = useState(initialTask)` sets the state variable to be named `tasks`, and we can use the function `setTasks` to update the state. The initial value of `tasks` is set to `initialTask`. 
 
-2. In the below example, only changes to the state - `tasks`, i.e. using of `setTasks`, will trigger a rerender of the component. Meaning, if we simply reassign the task with e.g. tasks = updatedTask, or tasks.push(newTask), etc, will not trigger the rerendering. > Instead of assigning a new value to setTasks, the setter function also accepts a function as the parameter - `setTasks(currentTasks => return newTasks)`, so that it can return a new state based on the current state. > If `count = 5`, calling `setCount(count + 1)` 3 times is calling `setCount(5 + 1)` 3 times, which results in `count = 6`. Use `setCount(count => count + 1)` instead if you want to increment it 3 times. 
+> `useState` is a hook, and hooks are only allowed to be called at the top level of your component.
 
-3. States are immutable, so to reassign the states with the existing values, we can use something like {...task, done: checked} to create a new copy of task, and set the done property to checked. Or for the array, we can use the array functions like [`map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) or [`filter`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) that returns a new copy of the array. 
+### 2 In the below example, only changes to the state - `tasks`, i.e. using of `setTasks`, will trigger a rerender of the component. Meaning, if we simply reassign the task with e.g. tasks = updatedTask, or tasks.push(newTask), etc, will not trigger the rerendering. 
 
-4. Because the UI is assigned with values from the state, we need to provide functions to update the state, so that the UI will be updated upon human inputs. In the below example, without the `onChange` method, to call the `checkBoxHandler` to update the value of the `task`, clicking on the checkbox will not check or uncheck it. 
+> Instead of assigning a new value to setTasks, the setter function also accepts a function as the parameter - `setTasks(currentTasks => return newTasks)`, so that it can return a new state based on the current state. 
+
+> If `count = 5`, calling `setCount(count + 1)` 3 times is calling `setCount(5 + 1)` 3 times, which results in `count = 6`. Use `setCount(count => count + 1)` instead if you want to increment it 3 times. 
+
+### 3 States are immutable, so to reassign the states with the existing values, we can use something like {...task, done: checked} to create a new copy of task, and set the done property to checked. Or for the array, we can use the array functions like [`map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) or [`filter`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) that returns a new copy of the array. 
+
+### 4 Because the UI is assigned with values from the state, we need to provide functions to update the state, so that the UI will be updated upon human inputs. In the below example, without the `onChange` method, to call the `checkBoxHandler` to update the value of the `task`, clicking on the checkbox will not check or uncheck it. 
 
 ```
 <input
@@ -62,7 +68,7 @@ To have states in react, we need to use the [`useState` hook](https://react.dev/
 />
 ```
 
-5. Every iterating/looping component/tag needs to have a `key` with a unique value, to uniquely identify the looping component, e.g. `<li key={task.id}>`.
+### 5 Every iterating/looping component/tag needs to have a `key` with a unique value, to uniquely identify the looping component, e.g. `<li key={task.id}>`.
 
 ```
 import { useState } from "react";
